@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    margin:0;
+    overflow: hidden;
+}
+
+h1 {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    color:#fff;
+    left: 50%;
+    top: 20%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    position: relative;
+}
+
+.btn{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    top: 40%;
+    transform: translateX(-50%);
+    text-decoration: none;
+    color: #fff;
+    border: #fff solid 0.2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 15rem;
+    padding: 1.5rem;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.split{
+    height: 100%;
+    overflow:hidden;
+    width:50%;
+    position: absolute;
+    background-size: cover;
+}
+.split.left::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color:  rgba(87, 84, 236, 0.7);
+}
+
+.split.left{
+    left:0;
+    background-image: url("images/img-1.jpg");
+}
+
+.split.right::before{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-color:rgba(43, 43, 43, 0.8);
+}
+.split.right{
+    right:0;
+    background-image: url("images/img-2.jpg");
+}
+
+.split.left .btn:hover {
+    border-color: rgba(87, 84, 236, 1);
+    background-color: blueviolet;
+}
+.split.right .btn:hover {
+    border-color: rgba(28, 122, 28, 1);
+    background-color: green;
+}
+
+.hover-left .left {
+    width: 75%;
+}
+.hover-left .right{
+    width:25%;
+}
+
+.hover-right .right {
+    width: 75%;
+}
+
+.hover-right .left {
+    width: 25%;
+}
+
+.split.right,
+.split.left,
+.split.right::before,
+.split.left::before {
+  transition: all 1000ms ease-in-out;
+}
