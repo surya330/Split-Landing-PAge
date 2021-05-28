@@ -58,7 +58,7 @@ h1 {
 
 .split.left{
     left:0;
-    background-image: url("images/img-1.jpg");
+    background-image: url("img-1.jpg");
 }
 
 .split.right::before{
@@ -70,7 +70,7 @@ h1 {
 }
 .split.right{
     right:0;
-    background-image: url("images/img-2.jpg");
+    background-image: url("img-2.jpg");
 }
 
 .split.left .btn:hover {
