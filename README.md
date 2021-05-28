@@ -1,1 +1,1 @@
-# Split-Landing-PAge
+# Split-Landing-Page
